@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+service TestService {
+   rpc test_function(Data) returns (Data) {}
+}
+
+message Data {
+  string value = 1;
+}
